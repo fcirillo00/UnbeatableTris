@@ -107,7 +107,7 @@ class Tris:
         return self.countEmptyCells() == 0 or self.utility() != 0
 
 # minimax with no pruning, much slower at first
-def minimax(node: Tris) -> tuple[int, Tris]:
+def minimax(node: Tris):
     children = node.getNextPossibleMoves() 
 
     if not children or node.isGameOver():
@@ -134,7 +134,7 @@ def minimax(node: Tris) -> tuple[int, Tris]:
         return min_utility, best_option
 
 # minimax with pruning, almost instantaneous
-def minimaxPruning (node: Tris, alpha = -1000, beta = 1000) -> tuple[int, Tris]:
+def minimaxPruning (node: Tris, alpha = -1000, beta = 1000):
     children = node.getNextPossibleMoves()
     if not children or node.isGameOver():
         return node.utility(), node
