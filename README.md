@@ -1,2 +1,2 @@
 # Unbeatable-Tris
-Tris AI using minimax algorithm with alpha-beta pruning.
+Tris (Tic Tac Toe) AI on Python using minimax algorithm with alpha-beta pruning.
